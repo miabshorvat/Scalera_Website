@@ -14,7 +14,7 @@ export function CtaSection() {
           {/* Background image */}
           <div className="absolute inset-0">
             <Image
-              src="/handshake.jpg"
+              src="/handshake.webp"
               alt=""
               fill
               className="object-cover"

@@ -30,7 +30,7 @@ function UeberUnsContent() {
         {/* Hero with image */}
         <section className="relative overflow-hidden pt-28 pb-16 sm:pt-32 sm:pb-20 lg:pt-44 lg:pb-32">
           <div className="absolute inset-0">
-            <Image src="/woman-coding.jpg" alt="" fill className="object-cover object-top" />
+            <Image src="/woman-coding.webp" alt="" fill className="object-cover object-top" />
             <div className="absolute inset-0 bg-navy-950/80" />
             <div className="absolute inset-0 bg-gradient-to-b from-navy-950/60 via-navy-950/70 to-navy-950" />
           </div>
@@ -61,7 +61,7 @@ function UeberUnsContent() {
             <div className="grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-20">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
                 <Image
-                  src="/about-dev.jpg"
+                  src="/about-dev.webp"
                   alt="Development workspace"
                   fill
                   className="object-cover"
@@ -119,7 +119,7 @@ function UeberUnsContent() {
           <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
             <div className="relative overflow-hidden rounded-3xl">
               <div className="absolute inset-0">
-                <Image src="/handshake.jpg" alt="" fill className="object-cover" />
+                <Image src="/handshake.webp" alt="" fill className="object-cover" />
                 <div className="absolute inset-0 bg-navy-950/80" />
                 <div className="absolute inset-0 bg-gradient-to-br from-accent-500/15 via-transparent to-accent-600/10" />
               </div>

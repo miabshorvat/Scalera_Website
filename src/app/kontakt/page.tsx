@@ -15,7 +15,7 @@ function KontaktContent() {
       <main>
         <section className="relative overflow-hidden pt-28 pb-0 sm:pt-32 lg:pt-44">
           <div className="absolute inset-0">
-            <Image src="/laptop-dark.jpg" alt="" fill className="object-cover" />
+            <Image src="/laptop-dark.webp" alt="" fill className="object-cover" />
             <div className="absolute inset-0 bg-navy-950/85" />
             <div className="absolute inset-0 bg-gradient-to-b from-navy-950/60 via-navy-950/70 to-navy-950" />
           </div>

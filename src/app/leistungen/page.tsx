@@ -72,7 +72,7 @@ function LeistungenContent() {
           <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
             <div className="relative overflow-hidden rounded-3xl">
               <div className="absolute inset-0">
-                <Image src="/handshake.jpg" alt="" fill className="object-cover" />
+                <Image src="/handshake.webp" alt="" fill className="object-cover" />
                 <div className="absolute inset-0 bg-navy-950/80" />
                 <div className="absolute inset-0 bg-gradient-to-br from-accent-500/15 via-transparent to-accent-600/10" />
               </div>

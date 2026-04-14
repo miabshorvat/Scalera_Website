@@ -44,7 +44,7 @@ export function Intro() {
           <div className="relative">
             <div className="relative aspect-[4/3] overflow-hidden rounded-xl sm:rounded-2xl">
               <Image
-                src="/team-brainstorm.jpg"
+                src="/team-brainstorm.webp"
                 alt="Team collaboration"
                 fill
                 className="object-cover"
