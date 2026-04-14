@@ -34,8 +34,8 @@ export default function Impressum() {
             <p>E-Mail: laura.kufner@scalera-hq.com</p>
           </div>
           <div>
-            <h2 className="mb-3 text-xl font-semibold text-white">Umsatzsteuer-ID</h2>
-            <p>{"Umsatzsteuer-Identifikationsnummer gem\u00E4\u00DF \u00A7 27a Umsatzsteuergesetz:"}<br />Wird nachgetragen.</p>
+            <h2 className="mb-3 text-xl font-semibold text-white">{"Verantwortlich f\u00FCr den Inhalt nach \u00A7 18 Abs. 2 MStV"}</h2>
+            <p>Laura Kufner<br />{"Rinnen\u00E4ckerstr. 24"}<br />71332 Waiblingen</p>
           </div>
           <div>
             <h2 className="mb-3 text-xl font-semibold text-white">{"Haftung f\u00FCr Inhalte"}</h2>
