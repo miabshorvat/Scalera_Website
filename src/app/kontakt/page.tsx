@@ -13,7 +13,7 @@ function KontaktContent() {
     <>
       <Header />
       <main>
-        <section className="relative overflow-hidden pt-32 pb-0 lg:pt-44">
+        <section className="relative overflow-hidden pt-28 pb-0 sm:pt-32 lg:pt-44">
           <div className="absolute inset-0">
             <Image src="/laptop-dark.jpg" alt="" fill className="object-cover" />
             <div className="absolute inset-0 bg-navy-950/85" />
@@ -21,12 +21,12 @@ function KontaktContent() {
           </div>
           <div className="absolute inset-0 bg-grid" />
 
-          <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent-400">
                 {locale === "de" ? "Kontakt" : "Contact"}
               </span>
-              <h1 className="mt-6 text-5xl font-bold leading-[1.1] tracking-tight text-white sm:text-6xl lg:text-7xl">
+              <h1 className="mt-6 text-3xl sm:text-5xl font-bold leading-[1.1] tracking-tight text-white lg:text-6xl">
                 {locale === "de" ? "Lassen Sie uns sprechen." : "Let\u2019s talk."}
               </h1>
               <p className="mt-8 text-xl leading-relaxed text-gray-300">

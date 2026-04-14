@@ -7,7 +7,7 @@ export const metadata = {
 export default function Impressum() {
   return (
     <div className="min-h-screen bg-navy-950">
-      <div className="mx-auto max-w-3xl px-6 py-32 lg:py-44">
+      <div className="mx-auto max-w-3xl px-6 py-24 sm:py-32 lg:py-44">
         <Link
           href="/"
           className="group mb-16 inline-flex items-center gap-2 text-sm text-gray-400 transition-colors hover:text-white"
@@ -18,7 +18,7 @@ export default function Impressum() {
           {"Zur\u00FCck zur Startseite"}
         </Link>
 
-        <h1 className="text-4xl font-bold text-white sm:text-5xl">Impressum</h1>
+        <h1 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">Impressum</h1>
 
         <div className="mt-12 space-y-10 text-base leading-relaxed text-gray-400">
           <div>

@@ -27,30 +27,30 @@ export function Hero() {
       <div className="absolute bottom-1/3 right-1/4 h-[500px] w-[500px] rounded-full bg-accent-600/8 blur-[100px] animate-gradient-shift" style={{ animationDelay: "4s" }} />
       <div className="absolute inset-0 bg-gradient-to-b from-navy-950/50 via-transparent to-navy-950" />
 
-      <div className="relative mx-auto max-w-7xl px-6 py-40 lg:px-8 lg:py-48">
+      <div className="relative mx-auto max-w-7xl px-5 py-28 sm:px-6 sm:py-40 lg:px-8 lg:py-48">
         <div className="max-w-5xl">
-          <div className="animate-fade-in-up mb-8 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-5 py-2 backdrop-blur-sm">
+          <div className="animate-fade-in-up mb-6 sm:mb-8 inline-flex items-center gap-2 sm:gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 sm:px-5 sm:py-2 backdrop-blur-sm">
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-400 opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-accent-400" />
             </span>
-            <span className="text-sm font-medium text-gray-300">
+            <span className="text-xs sm:text-sm font-medium text-gray-300">
               {t.intro.label}
             </span>
           </div>
 
-          <h1 className="animate-fade-in-up-delay-1 text-[clamp(2.5rem,6vw,5.5rem)] font-bold leading-[1.05] tracking-tight text-white">
+          <h1 className="animate-fade-in-up-delay-1 text-[clamp(2rem,6vw,5.5rem)] font-bold leading-[1.08] tracking-tight text-white">
             {t.hero.title}
           </h1>
 
-          <p className="animate-fade-in-up-delay-2 mt-8 max-w-3xl text-xl leading-relaxed text-gray-300 sm:text-2xl sm:leading-relaxed">
+          <p className="animate-fade-in-up-delay-2 mt-5 sm:mt-8 max-w-3xl text-base sm:text-xl leading-relaxed text-gray-300 sm:leading-relaxed">
             {t.hero.subtitle}
           </p>
 
-          <div className="animate-fade-in-up-delay-3 mt-12 flex flex-col gap-4 sm:flex-row sm:gap-5">
+          <div className="animate-fade-in-up-delay-3 mt-8 sm:mt-12 flex flex-col gap-3 sm:flex-row sm:gap-5">
             <Link
               href="/kontakt"
-              className="group inline-flex items-center justify-center rounded-xl bg-white px-8 py-4 text-base font-semibold text-navy-950 transition-all hover:bg-gray-100 sm:text-lg"
+              className="group inline-flex items-center justify-center rounded-xl bg-white px-6 py-3.5 sm:px-8 sm:py-4 text-base font-semibold text-navy-950 transition-all hover:bg-gray-100"
             >
               {t.hero.cta}
               <svg
@@ -64,7 +64,7 @@ export function Hero() {
             </Link>
             <Link
               href="/leistungen"
-              className="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-8 py-4 text-base font-semibold text-gray-200 backdrop-blur-sm transition-all hover:border-white/25 hover:bg-white/10 hover:text-white sm:text-lg"
+              className="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-6 py-3.5 sm:px-8 sm:py-4 text-base font-semibold text-gray-200 backdrop-blur-sm transition-all hover:border-white/25 hover:bg-white/10 hover:text-white"
             >
               {t.hero.ctaSecondary}
             </Link>
