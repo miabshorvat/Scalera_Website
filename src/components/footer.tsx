@@ -13,16 +13,16 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-24">
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <Link href="/" className="inline-block -mt-20">
+            <Link href="/" className="inline-block">
               <Image
                 src="/logo-full.png"
                 alt="Scalera"
-                width={800}
-                height={200}
-                className="h-48 w-auto lg:h-56"
+                width={200}
+                height={50}
+                className="h-10 w-auto lg:h-12"
               />
             </Link>
-            <p className="-mt-8 max-w-sm text-base leading-relaxed text-gray-500">
+            <p className="mt-5 max-w-sm text-base leading-relaxed text-gray-500">
               {t.footer.tagline}
             </p>
           </div>

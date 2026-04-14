@@ -36,9 +36,9 @@ export function Header() {
           <Image
             src="/logo-full.png"
             alt="Scalera"
-            width={800}
-            height={200}
-            className="h-48 w-auto lg:h-56"
+            width={180}
+            height={45}
+            className="h-9 w-auto lg:h-11"
           />
         </Link>
 
