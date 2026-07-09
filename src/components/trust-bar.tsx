@@ -7,11 +7,11 @@ export function TrustBar() {
 
   return (
     <section className="relative border-y border-white/5 bg-navy-950/60 py-8 sm:py-10">
-      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+      <div className="reveal mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <p className="text-center text-[11px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-gray-500">
           {t.trust.label}
         </p>
-        <div className="mt-5 sm:mt-6 flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
+        <div className="reveal-stagger mt-5 sm:mt-6 flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
           {t.trust.chips.map((chip) => (
             <span
               key={chip}

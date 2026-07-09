@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { LocaleProvider, useLocale } from "@/lib/locale-context";
 import { Header } from "@/components/header";
+import { ScrollReveal } from "@/components/scroll-reveal";
 import { Footer } from "@/components/footer";
 import { Results } from "@/components/results";
 
@@ -12,10 +13,11 @@ function VorgehenContent() {
 
   return (
     <>
+      <ScrollReveal />
       <Header />
       <main>
         {/* Hero with image */}
-        <section className="relative overflow-hidden pt-28 pb-16 sm:pt-32 sm:pb-20 lg:pt-44 lg:pb-32">
+        <section className="relative overflow-hidden pt-28 pb-16 sm:pt-32 sm:pb-20 lg:pt-32 lg:pb-20">
           <div className="absolute inset-0">
             <Image src="/dashboard-presentation.webp" alt="" fill className="object-cover" />
             <div className="absolute inset-0 bg-navy-950/80" />
@@ -24,7 +26,7 @@ function VorgehenContent() {
           <div className="absolute inset-0 bg-grid" />
 
           <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-            <div className="max-w-3xl">
+            <div className="reveal max-w-3xl">
               <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent-400">
                 {t.process.label}
               </span>
@@ -33,8 +35,8 @@ function VorgehenContent() {
               </h1>
               <p className="mt-8 text-xl leading-relaxed text-gray-300">
                 {locale === "de"
-                  ? "Unser Prozess ist klar definiert, aber flexibel genug, um sich an Ihre Situation anzupassen. Sie wissen von Anfang an, was passiert – und was es kostet."
-                  : "Our process is clearly defined, yet flexible enough to adapt to your situation. You know from the start what happens – and what it costs."}
+                  ? "Unser Prozess ist klar definiert, aber flexibel genug, um sich an Ihre Situation anzupassen. Sie wissen von Anfang an, was passiert und was es kostet."
+                  : "Our process is clearly defined, yet flexible enough to adapt to your situation. You know from the start what happens and what it costs."}
               </p>
               <div className="mt-6 flex flex-wrap gap-2.5">
                 {(locale === "de"
@@ -54,14 +56,14 @@ function VorgehenContent() {
         </section>
 
         {/* Process Steps */}
-        <section className="py-14 sm:py-20 lg:py-32">
+        <section className="py-12 sm:py-16 lg:py-20">
           <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
             <div className="relative">
               <div className="absolute left-10 top-0 bottom-0 hidden w-px lg:block">
                 <div className="h-full bg-gradient-to-b from-accent-500/50 via-accent-500/20 to-transparent" />
               </div>
 
-              <div className="space-y-6 lg:space-y-8">
+              <div className="reveal-stagger space-y-6 lg:space-y-8">
                 {t.process.steps.map((step, i) => (
                   <div key={i} className="group relative flex items-start gap-6 lg:gap-10">
                     <div className="relative z-10 flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-navy-950 transition-all duration-300 group-hover:border-accent-500/30 group-hover:shadow-lg group-hover:shadow-accent-500/5">
@@ -81,7 +83,7 @@ function VorgehenContent() {
         <Results />
 
         {/* CTA with image */}
-        <section className="py-14 sm:py-20 lg:py-32">
+        <section className="py-12 sm:py-16 lg:py-20">
           <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
             <div className="relative overflow-hidden rounded-3xl">
               <div className="absolute inset-0">

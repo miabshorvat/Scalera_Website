@@ -9,7 +9,7 @@ export function Services() {
   return (
     <section id="services" className="relative py-32 lg:py-44">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="reveal mx-auto max-w-3xl text-center">
           <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent-400">
             {t.services.label}
           </span>

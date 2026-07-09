@@ -7,11 +7,11 @@ export function ProcessTeaser() {
   const { t } = useLocale();
 
   return (
-    <section className="relative py-20 sm:py-32 lg:py-44">
-      <div className="divider-glow mx-auto mb-20 max-w-xl sm:mb-32 lg:mb-44" />
+    <section className="relative py-14 sm:py-20 lg:py-24">
+      <div className="divider-glow mx-auto mb-10 max-w-xl sm:mb-14 lg:mb-16" />
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="reveal mx-auto max-w-3xl text-center">
           <span className="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-accent-400">
             {t.process.teaserLabel}
           </span>
@@ -21,7 +21,7 @@ export function ProcessTeaser() {
         </div>
 
         {/* Horizontale Schrittfolge */}
-        <div className="mt-12 sm:mt-20 grid gap-4 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="reveal-stagger mt-10 sm:mt-14 grid gap-4 sm:grid-cols-3 lg:grid-cols-5">
           {t.process.steps.map((step, i) => (
             <div key={i} className="relative">
               {/* Verbindungspfeil (nur Desktop, zwischen den Karten) */}

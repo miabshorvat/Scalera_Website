@@ -8,9 +8,9 @@ export function CtaSection() {
   const { t } = useLocale();
 
   return (
-    <section className="relative py-20 sm:py-32 lg:py-44">
+    <section className="relative py-14 sm:py-20 lg:py-24">
       <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-        <div className="relative mx-auto max-w-5xl overflow-hidden rounded-2xl sm:rounded-3xl">
+        <div className="reveal relative mx-auto max-w-5xl overflow-hidden rounded-2xl sm:rounded-3xl">
           {/* Background image */}
           <div className="absolute inset-0">
             <Image

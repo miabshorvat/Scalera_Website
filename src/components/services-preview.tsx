@@ -9,11 +9,11 @@ export function ServicesPreview() {
   const preview = t.services.items.slice(0, 3);
 
   return (
-    <section className="relative py-20 sm:py-32 lg:py-44">
-      <div className="divider-glow mx-auto mb-20 max-w-xl sm:mb-32 lg:mb-44" />
+    <section className="relative py-14 sm:py-20 lg:py-24">
+      <div className="divider-glow mx-auto mb-10 max-w-xl sm:mb-14 lg:mb-16" />
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="reveal mx-auto max-w-3xl text-center">
           <span className="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-accent-400">
             {t.services.label}
           </span>
@@ -22,7 +22,7 @@ export function ServicesPreview() {
           </h2>
         </div>
 
-        <div className="mt-12 sm:mt-20 grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="reveal-stagger mt-10 sm:mt-14 grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {preview.map((service, i) => {
             const Icon = getIcon(service.icon);
             return (

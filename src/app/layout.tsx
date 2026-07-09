@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 const SITE_URL = "https://scalera-hq.com"; // TODO: finale Domain prüfen
-const TITLE = "Scalera – Weniger Verwaltung. Mehr Wachstum.";
+const TITLE = "Scalera | Weniger Verwaltung. Mehr Wachstum.";
 const DESCRIPTION =
-  "Scalera entwickelt Systeme, die Unternehmen dauerhaft Verwaltungsaufwand sparen – von CRM über Automatisierung bis KI. Systeme, die im Alltag wirklich genutzt werden.";
+  "Scalera entwickelt Systeme, die Unternehmen dauerhaft Verwaltungsaufwand sparen. Von CRM über Automatisierung bis KI. Systeme, die im Alltag wirklich genutzt werden.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

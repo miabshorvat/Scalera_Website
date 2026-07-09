@@ -7,10 +7,10 @@ export function Intro() {
   const { t } = useLocale();
 
   return (
-    <section className="relative py-20 sm:py-32 lg:py-44">
+    <section className="relative py-14 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div className="grid gap-10 sm:gap-16 lg:grid-cols-2 lg:items-center lg:gap-20">
-          <div>
+          <div className="reveal">
             <span className="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-accent-400">
               {t.intro.label}
             </span>
@@ -21,7 +21,7 @@ export function Intro() {
               {t.intro.text}
             </p>
 
-            <div className="mt-8 sm:mt-10 space-y-3 sm:space-y-4">
+            <div className="reveal-stagger mt-8 sm:mt-10 space-y-3 sm:space-y-4">
               {t.intro.capabilities.map((item) => (
                 <div
                   key={item.title}
@@ -42,7 +42,7 @@ export function Intro() {
           </div>
 
           {/* Image */}
-          <div className="relative">
+          <div className="reveal relative">
             <div className="relative aspect-[4/3] overflow-hidden rounded-xl sm:rounded-2xl">
               <Image
                 src="/team-brainstorm.webp"

@@ -6,11 +6,11 @@ export function Faq() {
   const { t } = useLocale();
 
   return (
-    <section className="relative py-20 sm:py-32 lg:py-44">
-      <div className="divider-glow mx-auto mb-20 max-w-xl sm:mb-32 lg:mb-44" />
+    <section className="relative py-14 sm:py-20 lg:py-24">
+      <div className="divider-glow mx-auto mb-10 max-w-xl sm:mb-14 lg:mb-16" />
 
       <div className="mx-auto max-w-4xl px-5 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="reveal mx-auto max-w-3xl text-center">
           <span className="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-accent-400">
             {t.faq.label}
           </span>
@@ -19,7 +19,7 @@ export function Faq() {
           </h2>
         </div>
 
-        <div className="mt-12 sm:mt-16 space-y-3 sm:space-y-4">
+        <div className="reveal-stagger mt-12 sm:mt-16 space-y-3 sm:space-y-4">
           {t.faq.items.map((item, i) => (
             <details
               key={i}
