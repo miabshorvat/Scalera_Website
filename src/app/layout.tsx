@@ -56,7 +56,10 @@ export default function RootLayout({
       lang="de"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <div className="ambient" aria-hidden />
+        {children}
+      </body>
     </html>
   );
 }

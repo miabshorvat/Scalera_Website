@@ -127,9 +127,9 @@ body {
    bleibt alles sichtbar. */
 .reveal-ready .reveal {
   opacity: 0;
-  transform: translateY(32px);
-  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(40px) scale(0.97);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform;
 }
 .reveal-ready .reveal.reveal-in {
@@ -140,9 +140,9 @@ body {
 /* Gestaffelte Kinder (z. B. Karten-Grids) */
 .reveal-ready .reveal-stagger > * {
   opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(34px) scale(0.96);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform;
 }
 .reveal-ready .reveal-stagger.reveal-in > * {
@@ -163,5 +163,128 @@ body {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
+  }
+}
+
+/* ── Cursor-Spotlight auf Karten ─────────────────────────────────
+   Ein sanfter Glow folgt der Maus über jeder .glass-Karte.
+   --mx/--my werden per JS gesetzt. z-index -1 => hinter dem Text. */
+.glass {
+  position: relative;
+}
+.glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    240px circle at var(--mx, 50%) var(--my, -30%),
+    rgba(56, 189, 248, 0.16),
+    transparent 65%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+  z-index: -1;
+}
+.glass:hover::before {
+  opacity: 1;
+}
+
+/* ── Ambient-Hintergrund (lebendig, ganze Seite) ─────────────────── */
+.ambient {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+.ambient::before,
+.ambient::after {
+  content: "";
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(130px);
+}
+.ambient::before {
+  width: 55vw;
+  height: 55vw;
+  max-width: 700px;
+  max-height: 700px;
+  background: rgba(14, 165, 233, 0.08);
+  top: -12%;
+  left: -8%;
+  animation: drift-a 24s ease-in-out infinite;
+}
+.ambient::after {
+  width: 48vw;
+  height: 48vw;
+  max-width: 620px;
+  max-height: 620px;
+  background: rgba(2, 132, 199, 0.07);
+  bottom: -12%;
+  right: -8%;
+  animation: drift-b 30s ease-in-out infinite;
+}
+@keyframes drift-a {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(12vw, 8vh) scale(1.15); }
+}
+@keyframes drift-b {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-10vw, -6vh) scale(1.1); }
+}
+
+/* ── Laufende Trust-Leiste (Marquee) ─────────────────────────────── */
+.marquee {
+  display: flex;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.marquee__track {
+  display: flex;
+  flex-shrink: 0;
+  gap: 0.75rem;
+  padding-right: 0.75rem;
+  animation: marquee 34s linear infinite;
+  will-change: transform;
+}
+.marquee:hover .marquee__track {
+  animation-play-state: paused;
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+/* ── Button-Shine ────────────────────────────────────────────────── */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -160%;
+  width: 55%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  transform: skewX(-20deg);
+  pointer-events: none;
+}
+.btn-shine:hover::after {
+  animation: shine 0.9s ease;
+}
+@keyframes shine {
+  to { left: 160%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient::before,
+  .ambient::after,
+  .marquee__track {
+    animation: none !important;
   }
 }

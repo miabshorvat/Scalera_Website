@@ -82,14 +82,14 @@ function KontaktContent() {
           </div>
         </section>
 
-        {/* Kalender + Formular nebeneinander (Buchen schlägt Formular) */}
-        <section className="py-12 sm:py-16 lg:py-20">
+        {/* Kalender + Formular nebeneinander, gleich groß */}
+        <section className="pb-14 sm:pb-20 lg:pb-24">
           <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-            <div className="grid gap-10 lg:grid-cols-5 lg:gap-14">
-              <div className="lg:col-span-3">
+            <div className="grid items-stretch gap-8 lg:grid-cols-2 lg:gap-12">
+              <div className="h-full">
                 <CalendlyWidget />
               </div>
-              <div className="lg:col-span-2">
+              <div className="h-full">
                 <ContactForm />
               </div>
             </div>

@@ -32,7 +32,7 @@ export function CtaSection() {
             </p>
             <Link
               href="/kontakt"
-              className="group mt-8 sm:mt-10 inline-flex items-center justify-center rounded-xl bg-white px-6 py-3.5 sm:px-10 sm:py-4 text-base font-semibold text-navy-950 transition-all hover:bg-gray-100 sm:text-lg"
+              className="btn-shine group mt-8 sm:mt-10 inline-flex items-center justify-center rounded-xl bg-white px-6 py-3.5 sm:px-10 sm:py-4 text-base font-semibold text-navy-950 transition-all hover:bg-gray-100 sm:text-lg"
             >
               {t.cta.button}
               <svg

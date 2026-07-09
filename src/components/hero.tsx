@@ -50,7 +50,7 @@ export function Hero() {
           <div className="animate-fade-in-up-delay-3 mt-8 sm:mt-12 flex flex-col gap-3 sm:flex-row sm:gap-5">
             <Link
               href="/kontakt"
-              className="group inline-flex items-center justify-center rounded-xl bg-white px-6 py-3.5 sm:px-8 sm:py-4 text-base font-semibold text-navy-950 transition-all hover:bg-gray-100"
+              className="btn-shine group inline-flex items-center justify-center rounded-xl bg-white px-6 py-3.5 sm:px-8 sm:py-4 text-base font-semibold text-navy-950 transition-all hover:bg-gray-100"
             >
               {t.hero.cta}
               <svg

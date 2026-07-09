@@ -36,15 +36,15 @@ export function ContactForm() {
   }
 
   return (
-    <div className="reveal">
+    <div className="reveal flex h-full flex-col">
       <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
         {t.contact.formTitle}
       </h2>
-      <p className="mt-3 text-base leading-relaxed text-gray-400">{t.contact.text}</p>
+      <p className="mt-3 text-base leading-relaxed text-gray-400">{t.contact.formText}</p>
 
-      <div className="mt-6">
+      <div className="mt-6 flex flex-1 flex-col">
         {submitted ? (
-          <div className="glass flex min-h-[350px] items-center justify-center rounded-xl sm:rounded-2xl p-8 sm:p-12">
+          <div className="glass flex flex-1 items-center justify-center rounded-xl sm:rounded-2xl p-8 sm:p-12">
             <div className="text-center">
               <div className="mx-auto mb-4 sm:mb-6 flex h-16 w-16 sm:h-20 sm:w-20 items-center justify-center rounded-xl sm:rounded-2xl bg-accent-500/10">
                 <svg className="h-8 w-8 sm:h-10 sm:w-10 text-accent-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -55,8 +55,8 @@ export function ContactForm() {
             </div>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="glass rounded-xl sm:rounded-2xl p-6 sm:p-8">
-            <div className="space-y-4 sm:space-y-5">
+          <form onSubmit={handleSubmit} className="glass flex flex-1 flex-col rounded-xl sm:rounded-2xl p-6 sm:p-8">
+            <div className="flex flex-1 flex-col space-y-4 sm:space-y-5">
               <div className="grid gap-4 sm:gap-5 sm:grid-cols-2">
                 <div>
                   <label htmlFor="name" className="mb-1.5 sm:mb-2 block text-sm font-medium text-gray-300">
@@ -94,17 +94,16 @@ export function ContactForm() {
                   className="w-full rounded-lg sm:rounded-xl border border-white/10 bg-white/5 px-4 py-3 sm:px-5 sm:py-3.5 text-sm sm:text-base text-white placeholder-gray-500 outline-none transition-all focus:border-accent-500/40 focus:bg-white/[0.07] focus:ring-1 focus:ring-accent-500/40"
                 />
               </div>
-              <div>
+              <div className="flex flex-1 flex-col">
                 <label htmlFor="message" className="mb-1.5 sm:mb-2 block text-sm font-medium text-gray-300">
                   {t.contact.message}
                 </label>
                 <textarea
                   id="message"
                   name="message"
-                  rows={5}
                   required
                   placeholder={t.contact.messagePlaceholder}
-                  className="w-full resize-none rounded-lg sm:rounded-xl border border-white/10 bg-white/5 px-4 py-3 sm:px-5 sm:py-3.5 text-sm sm:text-base text-white placeholder-gray-500 outline-none transition-all focus:border-accent-500/40 focus:bg-white/[0.07] focus:ring-1 focus:ring-accent-500/40"
+                  className="w-full flex-1 resize-none rounded-lg sm:rounded-xl border border-white/10 bg-white/5 px-4 py-3 sm:px-5 sm:py-3.5 text-sm sm:text-base text-white placeholder-gray-500 outline-none transition-all focus:border-accent-500/40 focus:bg-white/[0.07] focus:ring-1 focus:ring-accent-500/40 min-h-[160px]"
                 />
               </div>
               <button
