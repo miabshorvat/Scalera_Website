@@ -26,7 +26,6 @@ export const site: SiteConfig = {
     location: "Deutschland",
   },
 
-  // TODO: Cal.com / Calendly-Link eintragen, z. B. "https://cal.com/scalera/erstgespraech"
-  // Leer lassen = Kalender-Buchungsblock wird ausgeblendet, nur Formular bleibt.
-  bookingUrl: "",
+  // Calendly-Buchungslink. Leer lassen = Kalender wird ausgeblendet, nur Formular bleibt.
+  bookingUrl: "https://calendly.com/laura-kufner-scalera-hq/30min",
 };

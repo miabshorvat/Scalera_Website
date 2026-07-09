@@ -93,21 +93,6 @@ export function Contact() {
               </ul>
             </div>
 
-            {/* Kalender-Buchung – erscheint nur, wenn bookingUrl gesetzt ist */}
-            {site.bookingUrl && (
-              <div className="mt-8 glass rounded-xl p-5">
-                <h3 className="text-base font-semibold text-white">{t.contact.bookTitle}</h3>
-                <p className="mt-1.5 text-sm text-gray-400">{t.contact.bookText}</p>
-                <a
-                  href={site.bookingUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 inline-flex items-center justify-center rounded-xl bg-white px-6 py-3 text-sm font-semibold text-navy-950 transition-all hover:bg-gray-100"
-                >
-                  {t.contact.bookButton}
-                </a>
-              </div>
-            )}
           </div>
 
           <div className="lg:col-span-3">

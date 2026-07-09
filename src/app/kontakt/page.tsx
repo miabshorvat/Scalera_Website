@@ -5,6 +5,7 @@ import { LocaleProvider, useLocale } from "@/lib/locale-context";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Contact } from "@/components/contact";
+import { CalendlyEmbed } from "@/components/calendly-embed";
 
 function KontaktContent() {
   const { locale } = useLocale();
@@ -38,6 +39,7 @@ function KontaktContent() {
           </div>
         </section>
 
+        <CalendlyEmbed />
         <Contact />
       </main>
       <Footer />
