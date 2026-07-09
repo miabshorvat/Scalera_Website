@@ -1,6 +1,7 @@
 "use client";
 
 import { LocaleProvider } from "@/lib/locale-context";
+import { ScrollReveal } from "@/components/scroll-reveal";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { TrustBar } from "@/components/trust-bar";
@@ -15,6 +16,7 @@ import { Footer } from "@/components/footer";
 export default function Home() {
   return (
     <LocaleProvider>
+      <ScrollReveal />
       <Header />
       <main>
         <Hero />

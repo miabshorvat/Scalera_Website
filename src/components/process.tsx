@@ -6,9 +6,9 @@ export function Process() {
   const { t } = useLocale();
 
   return (
-    <section id="process" className="relative py-20 sm:py-32 lg:py-44">
+    <section id="process" className="relative py-14 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="reveal mx-auto max-w-3xl text-center">
           <span className="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-accent-400">
             {t.process.label}
           </span>
@@ -17,7 +17,7 @@ export function Process() {
           </h2>
         </div>
 
-        <div className="relative mt-14 sm:mt-24">
+        <div className="relative mt-10 sm:mt-16">
           <div className="absolute left-7 top-0 bottom-0 hidden w-px sm:left-10 lg:block">
             <div className="h-full bg-gradient-to-b from-accent-500/50 via-accent-500/20 to-transparent" />
           </div>

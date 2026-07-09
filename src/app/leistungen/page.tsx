@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { LocaleProvider, useLocale } from "@/lib/locale-context";
 import { Header } from "@/components/header";
+import { ScrollReveal } from "@/components/scroll-reveal";
 import { Footer } from "@/components/footer";
 import { getIcon } from "@/components/icons";
 
@@ -12,16 +13,18 @@ function LeistungenContent() {
 
   return (
     <>
+      <ScrollReveal />
       <Header />
       <main>
         {/* Hero */}
-        <section className="relative overflow-hidden pt-28 pb-16 sm:pt-32 sm:pb-20 lg:pt-44 lg:pb-32">
+        <section className="relative overflow-hidden pt-28 pb-16 sm:pt-32 sm:pb-20 lg:pt-32 lg:pb-20">
           <div className="absolute inset-0 bg-grid" />
-          <div className="absolute right-1/4 top-1/3 h-[400px] w-[400px] rounded-full bg-accent-500/8 blur-[120px]" />
+          <div className="absolute left-1/4 top-1/4 h-[460px] w-[460px] rounded-full bg-accent-500/25 blur-[130px] animate-gradient-shift" />
+          <div className="absolute bottom-1/4 right-1/4 h-[380px] w-[380px] rounded-full bg-accent-600/20 blur-[120px] animate-gradient-shift" style={{ animationDelay: "4s" }} />
           <div className="absolute inset-0 bg-gradient-to-b from-navy-950/50 via-transparent to-navy-950" />
 
           <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-            <div className="max-w-3xl">
+            <div className="reveal max-w-3xl">
               <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent-400">
                 {t.services.label}
               </span>
@@ -30,17 +33,17 @@ function LeistungenContent() {
               </h1>
               <p className="mt-8 text-xl leading-relaxed text-gray-300">
                 {locale === "de"
-                  ? "Jedes Unternehmen ist anders. Unsere Leistungen passen wir an Ihre spezifischen Anforderungen an \u2013 immer mit dem Ziel, messbare Ergebnisse zu liefern."
-                  : "Every company is different. We tailor our services to your specific requirements \u2013 always with the goal of delivering measurable results."}
+                  ? "Jedes Unternehmen ist anders. Unsere Leistungen passen wir an Ihre spezifischen Anforderungen an, immer mit dem Ziel, messbare Ergebnisse zu liefern."
+                  : "Every company is different. We tailor our services to your specific requirements, always with the goal of delivering measurable results."}
               </p>
             </div>
           </div>
         </section>
 
         {/* Services Grid - clean cards without images */}
-        <section className="py-14 sm:py-20 lg:py-32">
+        <section className="py-12 sm:py-16 lg:py-20">
           <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-            <div className="grid gap-6 lg:grid-cols-2">
+            <div className="reveal-stagger grid gap-6 lg:grid-cols-2">
               {t.services.items.map((service, i) => {
                 const Icon = getIcon(service.icon);
                 return (
@@ -84,7 +87,7 @@ function LeistungenContent() {
         </section>
 
         {/* CTA Banner */}
-        <section className="py-14 sm:py-20 lg:py-32">
+        <section className="py-12 sm:py-16 lg:py-20">
           <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
             <div className="relative overflow-hidden rounded-3xl">
               <div className="absolute inset-0">

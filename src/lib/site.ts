@@ -16,10 +16,10 @@ export const site: SiteConfig = {
   url: "https://scalera-hq.com",
 
   contact: {
-    phone: "", // bewusst leer – keine Telefonnummer online
+    phone: "", // bewusst leer, keine Telefonnummer online
     email: "laura.kufner@scalera-hq.com",
     linkedin: "https://www.linkedin.com/company/scalerahq/",
-    location: "Stuttgart",
+    location: "", // bewusst leer, wird ausgeblendet
   },
 
   // Calendly-Buchungslink. Leer lassen = Kalender wird ausgeblendet, nur Formular bleibt.

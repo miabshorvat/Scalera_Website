@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 // Generiertes OG-/Social-Vorschaubild (Link-Karte in LinkedIn, WhatsApp, Slack …).
 // Wird beim Build statisch erzeugt. Farben aus dem Design-System (globals.css).
-export const alt = "Scalera – Weniger Verwaltung. Mehr Wachstum.";
+export const alt = "Scalera. Weniger Verwaltung. Mehr Wachstum.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -49,25 +49,25 @@ export default function Image() {
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div
             style={{
-              fontSize: "86px",
+              fontSize: "104px",
               fontWeight: 700,
               lineHeight: 1.05,
               color: "#ffffff",
               letterSpacing: "-0.02em",
             }}
           >
-            Ihr Unternehmen soll wachsen.
+            Weniger Verwaltung.
           </div>
           <div
             style={{
-              fontSize: "86px",
+              fontSize: "104px",
               fontWeight: 700,
               lineHeight: 1.05,
               letterSpacing: "-0.02em",
               color: "#38bdf8",
             }}
           >
-            Nicht Ihre Verwaltung.
+            Mehr Wachstum.
           </div>
         </div>
 
