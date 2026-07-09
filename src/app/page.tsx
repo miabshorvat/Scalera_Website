@@ -8,6 +8,7 @@ import { TrustBar } from "@/components/trust-bar";
 import { Intro } from "@/components/intro";
 import { ServicesPreview } from "@/components/services-preview";
 import { Problems } from "@/components/problems";
+import { Starter } from "@/components/starter";
 import { ProcessTeaser } from "@/components/process-teaser";
 import { Faq } from "@/components/faq";
 import { CtaSection } from "@/components/cta-section";
@@ -24,6 +25,7 @@ export default function Home() {
         <Intro />
         <ServicesPreview />
         <Problems />
+        <Starter />
         <ProcessTeaser />
         <Faq />
         <CtaSection />

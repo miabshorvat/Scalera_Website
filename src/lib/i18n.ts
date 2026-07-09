@@ -102,6 +102,18 @@ const translations = {
       ],
       cta: "Diese Probleme lösen wir. So arbeiten wir.",
     },
+    // Starter-Paket: der einfache, günstige erste Schritt
+    starter: {
+      label: "Starter-Paket",
+      title: "Der einfachste Einstieg",
+      subtitle:
+        "Sie müssen nicht Ihr ganzes Unternehmen umbauen. Wir starten mit einem einzigen Prozess: schnell, günstig, mit sofort spürbarem Ergebnis.",
+      cardTitle: "Ein Prozess, komplett automatisiert",
+      cardText:
+        "Wir automatisieren einen zeitfressenden Prozess in Ihrem Betrieb, zum Beispiel Angebotserstellung, Rechnungsversand, Bewerbungseingang, WhatsApp-Anbindung (Coexistence), Kundenanfragen (WhatsApp/E-Mail) oder wiederkehrende Reports.",
+      bullets: ["Fertig in ca. 2 Wochen", "Festpreis ab 2.900 €", "Kein Risiko, kein Rundum-Umbau"],
+      button: "Prozess besprechen",
+    },
     // Kundenorientierter 5-Schritte-Ablauf
     process: {
       label: "Unsere Vorgehensweise",
@@ -305,6 +317,17 @@ const translations = {
         '"Administrative tasks slow down our operations."',
       ],
       cta: "We solve these problems. See how we work.",
+    },
+    starter: {
+      label: "Starter package",
+      title: "The easiest way in",
+      subtitle:
+        "You don't have to overhaul your whole company. We start with a single process: fast, affordable, with an immediately noticeable result.",
+      cardTitle: "One process, fully automated",
+      cardText:
+        "We automate one time-consuming process in your business, for example quote creation, invoice dispatch, application intake, WhatsApp integration (Coexistence), customer inquiries (WhatsApp/email) or recurring reports.",
+      bullets: ["Ready in about 2 weeks", "Fixed price from €2,900", "No risk, no full rebuild"],
+      button: "Discuss your process",
     },
     process: {
       label: "Our Approach",
