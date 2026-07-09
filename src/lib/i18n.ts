@@ -162,10 +162,6 @@ const translations = {
           a: "Unter anderem CRM- und ERP-Systeme (z. B. Odoo, Frappe), Automatisierungstools (n8n, Make, Power Automate), WhatsApp-Automatisierung und moderne KI-Modelle – ausgewählt nach dem, was zu Ihnen passt.",
         },
         {
-          q: "Was kostet ein Projekt?",
-          a: "Jedes Projekt bekommt vorab einen Festpreis – keine offenen Stundenzettel. Typische Projektgrößen bewegen sich meist im Bereich von 20.000 bis 100.000 €, abhängig vom Umfang.",
-        },
-        {
           q: "Arbeitet ihr deutschlandweit?",
           a: "Ja. Wir arbeiten remote und deutschlandweit – auf Wunsch auch vor Ort für Workshops und Kick-offs.",
         },
@@ -365,10 +361,6 @@ const translations = {
         {
           q: "Which systems do you work with?",
           a: "Among others CRM and ERP systems (e.g. Odoo, Frappe), automation tools (n8n, Make, Power Automate), WhatsApp automation and modern AI models – chosen based on what fits you.",
-        },
-        {
-          q: "What does a project cost?",
-          a: "Every project gets a fixed price up front – no open-ended timesheets. Typical project sizes range from €20,000 to €100,000, depending on scope.",
         },
         {
           q: "Do you work across Germany?",
