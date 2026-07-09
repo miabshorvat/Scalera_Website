@@ -24,8 +24,8 @@ export default function Home() {
         <TrustBar />
         <Intro />
         <ServicesPreview />
-        <Problems />
         <Starter />
+        <Problems />
         <ProcessTeaser />
         <Faq />
         <CtaSection />
