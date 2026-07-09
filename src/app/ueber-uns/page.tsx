@@ -37,6 +37,8 @@ function UeberUnsContent() {
             <div className="absolute inset-0 bg-gradient-to-b from-navy-950/60 via-navy-950/70 to-navy-950" />
           </div>
           <div className="absolute inset-0 bg-grid" />
+          <div className="absolute left-1/4 top-1/4 h-[460px] w-[460px] rounded-full bg-accent-500/12 blur-[120px] animate-gradient-shift" />
+          <div className="absolute bottom-1/4 right-1/4 h-[380px] w-[380px] rounded-full bg-accent-600/10 blur-[110px] animate-gradient-shift" style={{ animationDelay: "4s" }} />
 
           <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
             <div className="reveal max-w-4xl">
