@@ -9,14 +9,14 @@ const translations = {
       services: "Leistungen",
       process: "Vorgehen",
       contact: "Kontakt",
-      cta: "Kostenlose Prozessanalyse",
+      cta: "Kostenloses Potenzialgespräch",
     },
     hero: {
       badge: "Weniger Verwaltung. Mehr Wachstum.",
       title: "Wir nehmen Ihrem Team die Arbeit ab, die keiner machen will.",
       subtitle:
         "Mit CRM-, Automatisierungs- und KI-Systemen, die jede Woche Stunden sparen und im Alltag wirklich genutzt werden.",
-      cta: "Kostenlose Prozessanalyse",
+      cta: "Kostenloses Potenzialgespräch",
       ctaSecondary: "So arbeiten wir",
     },
     // Trust-Leiste direkt unter Hero – ehrlicher erster Beweis
@@ -176,7 +176,7 @@ const translations = {
     cta: {
       title: "Bereit für Systeme, die wirklich funktionieren?",
       text: "Wir bauen keine Theorie, sondern funktionierende Systeme, die im Alltag Zeit sparen und Wachstum ermöglichen.",
-      button: "Kostenlose Prozessanalyse",
+      button: "Kostenloses Potenzialgespräch",
     },
     contact: {
       label: "Kontakt",
@@ -214,14 +214,14 @@ const translations = {
       services: "Services",
       process: "Process",
       contact: "Contact",
-      cta: "Free Process Analysis",
+      cta: "Free Potential Call",
     },
     hero: {
       badge: "Less admin. More growth.",
       title: "We take the work off your team that nobody wants to do.",
       subtitle:
         "With CRM, automation and AI systems that save hours every week and actually get used day to day.",
-      cta: "Free Process Analysis",
+      cta: "Free Potential Call",
       ctaSecondary: "How we work",
     },
     trust: {
@@ -379,7 +379,7 @@ const translations = {
     cta: {
       title: "Ready for systems that actually work?",
       text: "We don't build theory, we build functioning systems that save time and enable growth in daily operations.",
-      button: "Free Process Analysis",
+      button: "Free Potential Call",
     },
     contact: {
       label: "Contact",
