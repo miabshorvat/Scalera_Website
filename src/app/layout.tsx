@@ -12,23 +12,40 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const SITE_URL = "https://scalera-hq.com"; // TODO: finale Domain prüfen
+const TITLE = "Scalera – Weniger Verwaltung. Mehr Wachstum.";
+const DESCRIPTION =
+  "Scalera entwickelt Systeme, die Unternehmen dauerhaft Verwaltungsaufwand sparen – von CRM über Automatisierung bis KI. Systeme, die im Alltag wirklich genutzt werden.";
+
 export const metadata: Metadata = {
-  title: "Scalera – Prozessautomatisierung & skalierbare Systeme",
-  description:
-    "Wir automatisieren administrative Prozesse und bauen skalierbare Systeme. Von CRM und Recruiting bis Backoffice und KI-Workflows.",
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
   keywords: [
     "Prozessautomatisierung",
     "KI Automatisierung KMU",
-    "digitale Prozesse optimieren",
     "CRM Aufbau Unternehmen",
     "Workflow Automatisierung",
     "Backoffice Automatisierung",
+    "Verwaltungsaufwand reduzieren",
   ],
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Scalera – Prozessautomatisierung & skalierbare Systeme",
-    description:
-      "Wir reduzieren manuelle Arbeit in Unternehmen um bis zu 50% durch intelligente Systeme.",
+    title: TITLE,
+    description: DESCRIPTION,
     type: "website",
+    locale: "de_DE",
+    url: SITE_URL,
+    siteName: "Scalera",
+    // TODO (Kunde): dediziertes OG-Bild (1200×630) unter /public/og-image.png ablegen.
+    // Fällt sonst auf das vorhandene Hero-Bild zurück.
+    images: [{ url: "/hero-abstract.webp", width: 1200, height: 630, alt: "Scalera" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: ["/hero-abstract.webp"],
   },
 };
 

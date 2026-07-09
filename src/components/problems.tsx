@@ -43,7 +43,7 @@ export function Problems() {
 
         <div className="mt-10 sm:mt-16 text-center">
           <Link
-            href="/kontakt"
+            href="/vorgehen"
             className="group inline-flex items-center gap-2 text-base sm:text-lg font-semibold text-accent-400 transition-colors hover:text-accent-300"
           >
             {t.problems.cta}

@@ -114,6 +114,47 @@ function UeberUnsContent() {
           </div>
         </section>
 
+        {/* Team – TODO (Kunde): echte Fotos, Namen und Rollen der Gründer eintragen.
+            Bei einer jungen Agentur sind die Gründer das Produkt. Aktuell Initial-Platzhalter,
+            KEIN Stockbild – bitte durch echte Personenfotos ersetzen. */}
+        <section className="py-14 sm:py-20 lg:py-32">
+          <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+            <div className="max-w-3xl">
+              <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent-400">
+                {locale === "de" ? "Das Team" : "The Team"}
+              </span>
+              <h2 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+                {locale === "de" ? "Die Menschen hinter Scalera." : "The people behind Scalera."}
+              </h2>
+              <p className="mt-6 text-lg leading-relaxed text-gray-400">
+                {locale === "de"
+                  ? "Bei einer jungen Agentur sind die Gründer das Produkt. Wir arbeiten direkt mit Ihnen – kein Account-Manager dazwischen, sondern die Leute, die Ihr System auch bauen."
+                  : "At a young agency, the founders are the product. You work directly with us – no account manager in between, just the people who actually build your system."}
+              </p>
+            </div>
+
+            <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                { name: locale === "de" ? "Name eintragen" : "Add name", role: locale === "de" ? "Rolle / Fokus" : "Role / focus" },
+                { name: locale === "de" ? "Name eintragen" : "Add name", role: locale === "de" ? "Rolle / Fokus" : "Role / focus" },
+              ].map((member, i) => (
+                <div key={i} className="glass glass-hover group rounded-2xl p-8 transition-all duration-300">
+                  <div className="flex h-20 w-20 items-center justify-center rounded-2xl border border-accent-500/20 bg-accent-500/10 text-2xl font-bold text-gradient-accent">
+                    {String.fromCharCode(65 + i)}
+                  </div>
+                  <h3 className="mt-6 text-xl font-bold text-white">{member.name}</h3>
+                  <p className="mt-1 text-base text-accent-300">{member.role}</p>
+                  <p className="mt-4 text-sm leading-relaxed text-gray-500">
+                    {locale === "de"
+                      ? "Kurzer Satz zur Person: Hintergrund, Schwerpunkt, warum sie brennt für das Thema."
+                      : "One line about this person: background, focus, why they care about this."}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* CTA with image */}
         <section className="py-14 sm:py-20 lg:py-32">
           <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">

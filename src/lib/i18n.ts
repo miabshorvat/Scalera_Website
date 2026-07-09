@@ -2,62 +2,121 @@ export type Locale = "de" | "en";
 
 const translations = {
   de: {
+    // Roter Faden – Positionierung, die überall durchscheint
+    positioning:
+      "Scalera entwickelt Systeme, die Unternehmen dauerhaft Verwaltungsaufwand sparen – von CRM über Automatisierung bis KI.",
     nav: {
       services: "Leistungen",
       process: "Vorgehen",
       contact: "Kontakt",
-      cta: "Erstgespräch anfragen",
+      cta: "Kostenlose Prozessanalyse",
     },
     hero: {
-      title: "Wir automatisieren administrative Prozesse und bauen skalierbare Systeme.",
+      badge: "Weniger Verwaltung. Mehr Wachstum.",
+      title: "Ihr Unternehmen soll wachsen. Nicht Ihre Verwaltung.",
       subtitle:
-        "Von CRM und Recruiting bis Backoffice und KI-Workflows – wir reduzieren manuelle Arbeit und schaffen klare, digitale Strukturen.",
-      cta: "Erstgespräch anfragen",
-      ctaSecondary: "Leistungen entdecken",
+        "Wir entwickeln CRM-, Automatisierungs- und KI-Systeme, die Ihrem Team jede Woche Stunden manueller Arbeit sparen – und im Alltag wirklich genutzt werden.",
+      cta: "Kostenlose Prozessanalyse",
+      ctaSecondary: "So arbeiten wir",
+    },
+    // Trust-Leiste direkt unter Hero – ehrlicher erster Beweis (keine erfundenen Logos)
+    trust: {
+      label: "Bereits umgesetzt – Eigenentwicklungen & Demo-Systeme",
+      chips: [
+        "CRM-Systeme",
+        "KI-Agenten",
+        "ERP (Odoo / Frappe)",
+        "WhatsApp-Automatisierung",
+        "Dashboards",
+        "Recruiting-Workflows",
+      ],
     },
     intro: {
       label: "Wer wir sind",
       title: "Prozessverständnis trifft Umsetzungskompetenz.",
       text: "Wir kombinieren Prozessverständnis, technisches Know-how und Umsetzungskompetenz, um Systeme zu bauen, die im Alltag wirklich funktionieren. Wir beraten nicht nur – wir konzipieren, implementieren und optimieren.",
-      stat1: "50%",
-      stat1Label: "weniger manuelle Arbeit",
-      stat2: "100%",
-      stat2Label: "Umsetzung, nicht nur Beratung",
-      stat3: "24/7",
-      stat3Label: "automatisierte Prozesse",
+      // Fähigkeiten statt unbelegter Prozente
+      capabilities: [
+        { title: "Umsetzung statt Beratung", description: "Wir liefern laufende Systeme, keine Foliensätze." },
+        { title: "Systeme, die im Alltag laufen", description: "Gebaut für das echte Tagesgeschäft, nicht für die Demo." },
+        { title: "Betreuung nach dem Go-Live", description: "Wir bleiben dran, bis es zuverlässig läuft." },
+      ],
+    },
+    // NEU: „So sieht das in der Praxis aus" – der Beweis-Block
+    proof: {
+      label: "So sieht das in der Praxis aus",
+      title: "Keine Icons. Echte Systeme.",
+      subtitle:
+        "Statt über uns zu reden, zeigen wir, was wir bauen: strukturierte Daten, automatisierte Abläufe und Oberflächen, die Ihr Team wirklich nutzt.",
+      items: [
+        {
+          image: "/dashboard-presentation.webp",
+          tag: "CRM-Dashboard",
+          title: "Vertrieb auf einen Blick",
+          description:
+            "Leads, Angebote und Follow-Ups an einem Ort – automatisch qualifiziert und priorisiert, statt in Excel und Postfach verstreut.",
+        },
+        {
+          image: "/data-screens.webp",
+          tag: "Automatisierungs-Workflow",
+          title: "Prozesse, die von selbst laufen",
+          description:
+            "Ein Ablauf statt zehn Handgriffe: Bewerbung rein → automatisch qualifiziert → Termin gebucht. Ausgelöst durch ein Ereignis, erledigt im Hintergrund.",
+        },
+        {
+          image: "/laptop-analytics.webp",
+          tag: "Reporting",
+          title: "Zahlen, die Entscheidungen tragen",
+          description:
+            "Automatisierte Reports und Dashboards mit den Kennzahlen, die zählen – aktuell, verlässlich, ohne manuelles Zusammenkopieren.",
+        },
+      ],
+      note: "Screenshots aus Eigenentwicklungen & Demo-Systemen.",
     },
     services: {
       label: "Was wir bieten",
       title: "Leistungen, die Ihr Unternehmen voranbringen.",
+      subtitle:
+        "Jedes Unternehmen ist anders. Unsere Leistungen passen wir an Ihre Abläufe an – immer mit dem Ziel, messbare Ergebnisse zu liefern.",
       items: [
         {
-          title: "CRM- & Vertriebsstrukturen",
+          title: "CRM & Vertrieb",
           description:
-            "Wir bauen CRM-Systeme, die Ihren Vertrieb strukturieren, Leads automatisch qualifizieren und Ihr Team entlasten – statt nur Daten zu sammeln.",
+            "Wir bauen CRM-Systeme, die Ihren Vertrieb strukturieren und Ihr Team entlasten – statt nur Daten zu sammeln.",
+          bullets: ["Leadmanagement", "Angebotsprozess", "automatische Follow-Ups", "Aufgabenverwaltung", "Reporting"],
+          result: "Ergebnis: kürzere Angebotszeiten und kein Lead, der verloren geht.",
           icon: "chart",
         },
         {
-          title: "HR- & Recruiting-Workflows",
+          title: "HR & Recruiting",
           description:
             "Vom Bewerbungseingang bis zum Onboarding: Wir automatisieren Ihre HR-Prozesse und schaffen klare Abläufe für wachsende Teams.",
+          bullets: ["Bewerbungseingang", "Terminvereinbarung", "Onboarding", "automatische Dokumentenerstellung"],
+          result: "Ergebnis: schnellere Time-to-Hire, weniger Koordinationsaufwand.",
           icon: "users",
         },
         {
           title: "Backoffice-Automatisierung",
           description:
-            "Rechnungen, Berichte, Freigaben – wir eliminieren repetitive Verwaltungsaufgaben und schaffen Systeme, die im Hintergrund arbeiten.",
+            "Rechnungen, Freigaben, Dokumente – wir eliminieren repetitive Verwaltungsaufgaben und schaffen Systeme, die im Hintergrund arbeiten.",
+          bullets: ["Rechnungen", "Freigaben", "Dokumente", "E-Mail-Automatisierung"],
+          result: "Ergebnis: Stunden manueller Arbeit pro Woche zurück.",
           icon: "cog",
         },
         {
           title: "KI-gestützte Prozessketten",
           description:
             "Wir integrieren KI dort, wo sie echten Mehrwert schafft: in Datenanalyse, Entscheidungsunterstützung und intelligenter Automatisierung.",
+          bullets: ["KI-Agenten", "Dokumenten-Verständnis", "intelligente Qualifizierung", "Entscheidungsunterstützung"],
+          result: "Ergebnis: KI, die Arbeit abnimmt – nicht Spielerei.",
           icon: "brain",
         },
         {
-          title: "Daten- & Reporting-Systeme",
+          title: "Daten & Reporting",
           description:
             "Strukturierte Daten, automatisierte Reports und Dashboards, die Ihnen echte Entscheidungsgrundlagen liefern – keine Zahlenfriedhöfe.",
+          bullets: ["Datenstruktur", "Dashboards", "automatisierte Reports", "Kennzahlen-Tracking"],
+          result: "Ergebnis: Entscheidungen auf Basis aktueller Zahlen.",
           icon: "data",
         },
       ],
@@ -66,43 +125,45 @@ const translations = {
       label: "Typische Herausforderungen",
       title: "Kommt Ihnen das bekannt vor?",
       items: [
-        "\u201EWir verlieren zu viel Zeit durch manuelle Prozesse.\u201C",
-        "\u201EUnsere Tools sind nicht miteinander verbunden.\u201C",
-        "\u201EUns fehlt eine klare Struktur im Tagesgesch\u00E4ft.\u201C",
-        "\u201EWir nutzen KI \u2013 aber ohne echten Nutzen.\u201C",
-        "\u201EWachstum erzeugt bei uns Chaos statt Effizienz.\u201C",
-        "\u201EAdministrative Aufgaben bremsen unser operatives Gesch\u00E4ft.\u201C",
+        "„Wir verlieren zu viel Zeit durch manuelle Prozesse.“",
+        "„Unsere Tools sind nicht miteinander verbunden.“",
+        "„Uns fehlt eine klare Struktur im Tagesgeschäft.“",
+        "„Wir nutzen KI – aber ohne echten Nutzen.“",
+        "„Wachstum erzeugt bei uns Chaos statt Effizienz.“",
+        "„Administrative Aufgaben bremsen unser operatives Geschäft.“",
       ],
-      cta: "Diese Probleme lösen wir.",
+      cta: "Diese Probleme lösen wir – so arbeiten wir",
     },
+    // Kundenorientierter 5-Schritte-Ablauf (Sicherheit: „Was passiert nach dem Klick?")
     process: {
       label: "Unsere Vorgehensweise",
-      title: "Strukturiert von der Analyse bis zur Optimierung.",
+      title: "Klarer Ablauf. Keine Überraschungen.",
+      teaserLabel: "In 5 Schritten zum laufenden System",
       steps: [
         {
           number: "01",
-          title: "Analyse",
-          description: "Bestehende Prozesse und Systeme verstehen, Engpässe identifizieren.",
+          title: "Kostenloses Erstgespräch",
+          description: "30 Minuten, unverbindlich. Wir hören zu und verstehen Ihre Situation.",
         },
         {
           number: "02",
-          title: "Konzeption",
-          description: "Skalierbare Strukturen und Workflows entwerfen.",
+          title: "Prozessanalyse",
+          description: "Wir finden gemeinsam die größten Zeitfresser in Ihrem Tagesgeschäft.",
         },
         {
           number: "03",
-          title: "Umsetzung",
-          description: "Systeme implementieren und in den Alltag integrieren.",
+          title: "Lösungskonzept",
+          description: "Konkreter Plan mit Festpreis – Sie wissen genau, was Sie bekommen und was es kostet.",
         },
         {
           number: "04",
-          title: "Automatisierung",
-          description: "Prozesse intelligent verknüpfen und automatisieren.",
+          title: "Umsetzung",
+          description: "Wir bauen das System und integrieren es in Ihren Alltag.",
         },
         {
           number: "05",
-          title: "Optimierung",
-          description: "Kontinuierliche Verbesserung im laufenden Betrieb.",
+          title: "Betreuung",
+          description: "Wir bleiben dran, bis alles zuverlässig läuft – auch nach dem Go-Live.",
         },
       ],
     },
@@ -115,18 +176,54 @@ const translations = {
         { title: "Klarere Abläufe", description: "Jeder weiß, was zu tun ist – transparente Prozesse statt unstrukturiertem Tagesgeschäft." },
         { title: "Bessere Skalierbarkeit", description: "Systeme, die mit Ihrem Unternehmen wachsen, ohne dass der Aufwand proportional steigt." },
         { title: "Sinnvoll eingesetzte KI", description: "KI, die echte Probleme löst – keine Spielerei, sondern messbare Effizienzgewinne." },
-        { title: "Mehr Effizienz", description: "Schnellere Durchlaufzeiten, weniger Overhead, mehr Output bei gleichen Ressourcen." },
+        { title: "Mehr Wachstum", description: "Weniger Zeit in der Verwaltung heißt mehr Zeit für das, was Ihr Unternehmen voranbringt." },
+      ],
+    },
+    // NEU: FAQ – Einwände vorwegnehmen
+    faq: {
+      label: "Häufige Fragen",
+      title: "Bevor Sie fragen.",
+      items: [
+        {
+          q: "Wie lange dauert ein Projekt?",
+          a: "Das hängt vom Umfang ab. Kleinere Automatisierungen laufen oft in wenigen Wochen, größere Systeme in einigen Monaten. Nach der Prozessanalyse bekommen Sie einen klaren Zeitplan.",
+        },
+        {
+          q: "Mit welchen Systemen arbeitet ihr?",
+          a: "Unter anderem CRM- und ERP-Systeme (z. B. Odoo, Frappe), Automatisierungstools (n8n, Make, Power Automate), WhatsApp-Automatisierung und moderne KI-Modelle – ausgewählt nach dem, was zu Ihnen passt.",
+        },
+        {
+          q: "Was kostet ein Projekt?",
+          a: "Jedes Projekt bekommt vorab einen Festpreis – keine offenen Stundenzettel. Typische Projektgrößen bewegen sich meist im Bereich von 20.000 bis 100.000 €, abhängig vom Umfang.",
+        },
+        {
+          q: "Arbeitet ihr deutschlandweit?",
+          a: "Ja. Wir arbeiten remote und deutschlandweit – auf Wunsch auch vor Ort für Workshops und Kick-offs.",
+        },
+        {
+          q: "Brauche ich ein bestehendes CRM?",
+          a: "Nein. Wir bauen ein passendes System auf oder verbinden Ihre bestehenden Tools – je nachdem, was sinnvoller ist.",
+        },
+        {
+          q: "Wie läuft das Erstgespräch ab?",
+          a: "30 Minuten, online oder vor Ort, kostenlos und unverbindlich. Wir hören zu, verstehen Ihre Abläufe und zeigen erste Ansatzpunkte. Kein Verkaufsdruck.",
+        },
       ],
     },
     cta: {
       title: "Bereit für funktionierende Systeme?",
       text: "Wir bauen keine Theorie – wir bauen funktionierende Systeme, die im Alltag Zeit sparen und Wachstum ermöglichen.",
-      button: "Erstgespräch anfragen",
+      button: "Kostenlose Prozessanalyse",
     },
     contact: {
       label: "Kontakt",
       title: "Lassen Sie uns sprechen.",
       text: "Erzählen Sie uns von Ihren Herausforderungen. Wir melden uns innerhalb von 24 Stunden.",
+      reassurance: "Antwort innerhalb von 24 h · kostenlos · unverbindlich · 30 Min · online oder vor Ort",
+      directTitle: "Direkter Draht",
+      bookTitle: "Lieber direkt einen Termin?",
+      bookText: "Wählen Sie einen Zeitpunkt, der Ihnen passt – Buchen schlägt Formular.",
+      bookButton: "Termin auswählen",
       name: "Name",
       email: "E-Mail",
       company: "Unternehmen",
@@ -136,7 +233,7 @@ const translations = {
       success: "Vielen Dank! Wir melden uns in Kürze bei Ihnen.",
     },
     footer: {
-      tagline: "Wir reduzieren manuelle Arbeit in Unternehmen durch intelligente Systeme, die wirklich genutzt werden.",
+      tagline: "Scalera entwickelt Systeme, die Unternehmen dauerhaft Verwaltungsaufwand sparen – von CRM über Automatisierung bis KI.",
       services: "Leistungen",
       company: "Unternehmen",
       impressum: "Impressum",
@@ -146,62 +243,117 @@ const translations = {
     },
   },
   en: {
+    positioning:
+      "Scalera builds systems that permanently reduce administrative overhead – from CRM to automation to AI.",
     nav: {
       services: "Services",
       process: "Process",
       contact: "Contact",
-      cta: "Book a Call",
+      cta: "Free Process Analysis",
     },
     hero: {
-      title: "We automate administrative processes and build scalable systems.",
+      badge: "Less admin. More growth.",
+      title: "Your business should grow. Not your admin work.",
       subtitle:
-        "From CRM and recruiting to back-office and AI workflows – we reduce manual work and create clear, digital structures.",
-      cta: "Book a Call",
-      ctaSecondary: "Explore Services",
+        "We build CRM, automation and AI systems that save your team hours of manual work every week – and actually get used day to day.",
+      cta: "Free Process Analysis",
+      ctaSecondary: "How we work",
+    },
+    trust: {
+      label: "Already built – in-house developments & demo systems",
+      chips: [
+        "CRM systems",
+        "AI agents",
+        "ERP (Odoo / Frappe)",
+        "WhatsApp automation",
+        "Dashboards",
+        "Recruiting workflows",
+      ],
     },
     intro: {
       label: "Who We Are",
       title: "Process understanding meets implementation expertise.",
       text: "We combine process understanding, technical know-how and implementation expertise to build systems that truly work in daily operations. We don't just consult – we design, implement and optimize.",
-      stat1: "50%",
-      stat1Label: "less manual work",
-      stat2: "100%",
-      stat2Label: "implementation, not just consulting",
-      stat3: "24/7",
-      stat3Label: "automated processes",
+      capabilities: [
+        { title: "Implementation, not consulting", description: "We deliver running systems, not slide decks." },
+        { title: "Systems that run day to day", description: "Built for real operations, not just the demo." },
+        { title: "Support after go-live", description: "We stay on it until it runs reliably." },
+      ],
+    },
+    proof: {
+      label: "What this looks like in practice",
+      title: "No icons. Real systems.",
+      subtitle:
+        "Instead of talking about ourselves, we show what we build: structured data, automated workflows and interfaces your team actually uses.",
+      items: [
+        {
+          image: "/dashboard-presentation.webp",
+          tag: "CRM dashboard",
+          title: "Sales at a glance",
+          description:
+            "Leads, quotes and follow-ups in one place – automatically qualified and prioritized instead of scattered across spreadsheets and inboxes.",
+        },
+        {
+          image: "/data-screens.webp",
+          tag: "Automation workflow",
+          title: "Processes that run themselves",
+          description:
+            "One flow instead of ten manual steps: application in → automatically qualified → meeting booked. Triggered by an event, handled in the background.",
+        },
+        {
+          image: "/laptop-analytics.webp",
+          tag: "Reporting",
+          title: "Numbers you can decide on",
+          description:
+            "Automated reports and dashboards with the metrics that matter – current, reliable, no manual copy-pasting.",
+        },
+      ],
+      note: "Screenshots from in-house developments & demo systems.",
     },
     services: {
       label: "What We Offer",
       title: "Services that drive your business forward.",
+      subtitle:
+        "Every company is different. We tailor our services to your workflows – always with the goal of delivering measurable results.",
       items: [
         {
-          title: "CRM & Sales Structures",
+          title: "CRM & Sales",
           description:
-            "We build CRM systems that structure your sales, automatically qualify leads and free up your team – instead of just collecting data.",
+            "We build CRM systems that structure your sales and free up your team – instead of just collecting data.",
+          bullets: ["Lead management", "Quoting process", "automatic follow-ups", "task management", "reporting"],
+          result: "Result: faster quotes and no lead falling through the cracks.",
           icon: "chart",
         },
         {
-          title: "HR & Recruiting Workflows",
+          title: "HR & Recruiting",
           description:
             "From application intake to onboarding: We automate your HR processes and create clear workflows for growing teams.",
+          bullets: ["Application intake", "scheduling", "onboarding", "automatic document generation"],
+          result: "Result: faster time-to-hire, less coordination overhead.",
           icon: "users",
         },
         {
           title: "Back-Office Automation",
           description:
-            "Invoices, reports, approvals – we eliminate repetitive administrative tasks and build systems that work in the background.",
+            "Invoices, approvals, documents – we eliminate repetitive administrative tasks and build systems that work in the background.",
+          bullets: ["Invoices", "approvals", "documents", "email automation"],
+          result: "Result: hours of manual work back every week.",
           icon: "cog",
         },
         {
           title: "AI-Powered Process Chains",
           description:
             "We integrate AI where it creates real value: in data analysis, decision support and intelligent automation.",
+          bullets: ["AI agents", "document understanding", "intelligent qualification", "decision support"],
+          result: "Result: AI that takes work off your plate – not a gimmick.",
           icon: "brain",
         },
         {
-          title: "Data & Reporting Systems",
+          title: "Data & Reporting",
           description:
             "Structured data, automated reports and dashboards that provide real decision-making foundations – not data graveyards.",
+          bullets: ["Data structure", "dashboards", "automated reports", "KPI tracking"],
+          result: "Result: decisions based on current numbers.",
           icon: "data",
         },
       ],
@@ -217,36 +369,37 @@ const translations = {
         '"Growth creates chaos instead of efficiency."',
         '"Administrative tasks slow down our operations."',
       ],
-      cta: "We solve these problems.",
+      cta: "We solve these problems – see how we work",
     },
     process: {
       label: "Our Approach",
-      title: "Structured from analysis to optimization.",
+      title: "A clear process. No surprises.",
+      teaserLabel: "Five steps to a running system",
       steps: [
         {
           number: "01",
-          title: "Analysis",
-          description: "Understand existing processes and systems, identify bottlenecks.",
+          title: "Free intro call",
+          description: "30 minutes, no obligation. We listen and understand your situation.",
         },
         {
           number: "02",
-          title: "Design",
-          description: "Create scalable structures and workflows.",
+          title: "Process analysis",
+          description: "Together we find the biggest time-wasters in your daily operations.",
         },
         {
           number: "03",
-          title: "Implementation",
-          description: "Build systems and integrate them into daily operations.",
+          title: "Solution concept",
+          description: "A concrete plan with a fixed price – you know exactly what you get and what it costs.",
         },
         {
           number: "04",
-          title: "Automation",
-          description: "Intelligently connect and automate processes.",
+          title: "Implementation",
+          description: "We build the system and integrate it into your daily work.",
         },
         {
           number: "05",
-          title: "Optimization",
-          description: "Continuous improvement in ongoing operations.",
+          title: "Support",
+          description: "We stay on it until everything runs reliably – even after go-live.",
         },
       ],
     },
@@ -259,18 +412,53 @@ const translations = {
         { title: "Clearer Workflows", description: "Everyone knows what to do – transparent processes instead of unstructured daily business." },
         { title: "Better Scalability", description: "Systems that grow with your company without proportionally increasing effort." },
         { title: "Meaningful AI Use", description: "AI that solves real problems – not gimmicks, but measurable efficiency gains." },
-        { title: "More Efficiency", description: "Faster throughput, less overhead, more output with the same resources." },
+        { title: "More Growth", description: "Less time on admin means more time for what moves your business forward." },
+      ],
+    },
+    faq: {
+      label: "Frequently Asked",
+      title: "Before you ask.",
+      items: [
+        {
+          q: "How long does a project take?",
+          a: "It depends on scope. Smaller automations often run within a few weeks, larger systems within a few months. After the process analysis you get a clear timeline.",
+        },
+        {
+          q: "Which systems do you work with?",
+          a: "Among others CRM and ERP systems (e.g. Odoo, Frappe), automation tools (n8n, Make, Power Automate), WhatsApp automation and modern AI models – chosen based on what fits you.",
+        },
+        {
+          q: "What does a project cost?",
+          a: "Every project gets a fixed price up front – no open-ended timesheets. Typical project sizes range from €20,000 to €100,000, depending on scope.",
+        },
+        {
+          q: "Do you work across Germany?",
+          a: "Yes. We work remotely and across Germany – and on-site for workshops and kick-offs when you prefer.",
+        },
+        {
+          q: "Do I need an existing CRM?",
+          a: "No. We build a suitable system or connect your existing tools – whichever makes more sense.",
+        },
+        {
+          q: "How does the intro call work?",
+          a: "30 minutes, online or on-site, free and without obligation. We listen, understand your workflows and show first starting points. No sales pressure.",
+        },
       ],
     },
     cta: {
       title: "Ready for systems that work?",
       text: "We don't build theory – we build functioning systems that save time and enable growth in daily operations.",
-      button: "Book a Call",
+      button: "Free Process Analysis",
     },
     contact: {
       label: "Contact",
       title: "Let's talk.",
       text: "Tell us about your challenges. We'll get back to you within 24 hours.",
+      reassurance: "Reply within 24 h · free · no obligation · 30 min · online or on-site",
+      directTitle: "Direct line",
+      bookTitle: "Prefer to book directly?",
+      bookText: "Pick a time that works for you – booking beats a form.",
+      bookButton: "Pick a time",
       name: "Name",
       email: "Email",
       company: "Company",
@@ -280,7 +468,7 @@ const translations = {
       success: "Thank you! We'll get back to you shortly.",
     },
     footer: {
-      tagline: "We reduce manual work in companies through intelligent systems that are actually used.",
+      tagline: "Scalera builds systems that permanently reduce administrative overhead – from CRM to automation to AI.",
       services: "Services",
       company: "Company",
       impressum: "Legal Notice",

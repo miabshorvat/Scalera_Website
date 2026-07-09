@@ -33,9 +33,22 @@ function VorgehenContent() {
               </h1>
               <p className="mt-8 text-xl leading-relaxed text-gray-300">
                 {locale === "de"
-                  ? "Unser Prozess ist klar definiert, aber flexibel genug, um sich an Ihre Situation anzupassen. So stellen wir sicher, dass jedes Projekt zum Erfolg wird."
-                  : "Our process is clearly defined, yet flexible enough to adapt to your situation. This ensures every project becomes a success."}
+                  ? "Unser Prozess ist klar definiert, aber flexibel genug, um sich an Ihre Situation anzupassen. Sie wissen von Anfang an, was passiert – und was es kostet."
+                  : "Our process is clearly defined, yet flexible enough to adapt to your situation. You know from the start what happens – and what it costs."}
               </p>
+              <div className="mt-6 flex flex-wrap gap-2.5">
+                {(locale === "de"
+                  ? ["Kostenloses Erstgespräch", "Festpreis statt offener Stunden", "Betreuung nach dem Go-Live"]
+                  : ["Free intro call", "Fixed price, not open hours", "Support after go-live"]
+                ).map((chip) => (
+                  <span
+                    key={chip}
+                    className="rounded-full border border-accent-500/20 bg-accent-500/5 px-4 py-1.5 text-sm font-medium text-accent-300"
+                  >
+                    {chip}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </section>
