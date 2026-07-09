@@ -23,8 +23,8 @@ export function Hero() {
 
       {/* Glow effects on top of image */}
       <div className="absolute inset-0 bg-grid" />
-      <div className="absolute left-1/3 top-1/4 h-[600px] w-[600px] rounded-full bg-accent-500/10 blur-[120px] animate-gradient-shift" />
-      <div className="absolute bottom-1/3 right-1/4 h-[500px] w-[500px] rounded-full bg-accent-600/8 blur-[100px] animate-gradient-shift" style={{ animationDelay: "4s" }} />
+      <div className="absolute left-1/3 top-1/4 h-[600px] w-[600px] rounded-full bg-accent-500/18 blur-[120px] animate-gradient-shift" />
+      <div className="absolute bottom-1/3 right-1/4 h-[500px] w-[500px] rounded-full bg-accent-600/16 blur-[100px] animate-gradient-shift" style={{ animationDelay: "4s" }} />
       <div className="absolute inset-0 bg-gradient-to-b from-navy-950/50 via-transparent to-navy-950" />
 
       <div className="relative mx-auto max-w-7xl px-5 py-28 sm:px-6 sm:py-40 lg:px-8 lg:py-48">

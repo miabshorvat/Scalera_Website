@@ -19,8 +19,8 @@ function LeistungenContent() {
         {/* Hero */}
         <section className="relative overflow-hidden pt-28 pb-16 sm:pt-32 sm:pb-20 lg:pt-32 lg:pb-20">
           <div className="absolute inset-0 bg-grid" />
-          <div className="absolute left-1/4 top-1/4 h-[460px] w-[460px] rounded-full bg-accent-500/12 blur-[120px] animate-gradient-shift" />
-          <div className="absolute bottom-1/4 right-1/4 h-[380px] w-[380px] rounded-full bg-accent-600/10 blur-[110px] animate-gradient-shift" style={{ animationDelay: "4s" }} />
+          <div className="absolute left-1/4 top-1/4 h-[460px] w-[460px] rounded-full bg-accent-500/25 blur-[130px] animate-gradient-shift" />
+          <div className="absolute bottom-1/4 right-1/4 h-[380px] w-[380px] rounded-full bg-accent-600/20 blur-[120px] animate-gradient-shift" style={{ animationDelay: "4s" }} />
           <div className="absolute inset-0 bg-gradient-to-b from-navy-950/50 via-transparent to-navy-950" />
 
           <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
