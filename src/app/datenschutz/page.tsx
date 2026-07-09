@@ -29,7 +29,7 @@ export default function Datenschutz() {
 
           <div>
             <h2 className="mb-3 text-xl font-semibold text-white">2. Verantwortliche Stelle</h2>
-            <p>{"Laura Kufner \u2013 Digitale Struktur- & Prozessberatung"}<br />{"Rinnen\u00E4ckerstr. 24"}<br />71332 Waiblingen<br />E-Mail: laura.kufner@scalera-hq.com</p>
+            <p>{"Laura Kufner \u2013 Digitale Struktur- & Prozessberatung"}<br />Landauerstr. 7<br />70499 Stuttgart<br />E-Mail: laura.kufner@scalera-hq.com</p>
             <p className="mt-3">{"Verantwortliche Stelle ist die nat\u00FCrliche oder juristische Person, die allein oder gemeinsam mit anderen \u00FCber die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet."}</p>
           </div>
 

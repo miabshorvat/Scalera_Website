@@ -23,7 +23,7 @@ export default function Impressum() {
         <div className="mt-12 space-y-10 text-base leading-relaxed text-gray-400">
           <div>
             <h2 className="mb-3 text-xl font-semibold text-white">{"Angaben gem\u00E4\u00DF \u00A7 5 TMG"}</h2>
-            <p>{"Laura Kufner \u2013 Digitale Struktur- & Prozessberatung"}<br />{"Rinnen\u00E4ckerstr. 24"}<br />71332 Waiblingen</p>
+            <p>{"Laura Kufner \u2013 Digitale Struktur- & Prozessberatung"}<br />Landauerstr. 7<br />70499 Stuttgart</p>
           </div>
           <div>
             <h2 className="mb-3 text-xl font-semibold text-white">Inhaberin</h2>
@@ -35,7 +35,7 @@ export default function Impressum() {
           </div>
           <div>
             <h2 className="mb-3 text-xl font-semibold text-white">{"Verantwortlich f\u00FCr den Inhalt nach \u00A7 18 Abs. 2 MStV"}</h2>
-            <p>Laura Kufner<br />{"Rinnen\u00E4ckerstr. 24"}<br />71332 Waiblingen</p>
+            <p>Laura Kufner<br />Landauerstr. 7<br />70499 Stuttgart</p>
           </div>
           <div>
             <h2 className="mb-3 text-xl font-semibold text-white">{"Haftung f\u00FCr Inhalte"}</h2>
