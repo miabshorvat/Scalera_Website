@@ -1,8 +1,7 @@
 // ─────────────────────────────────────────────────────────────
-//  ZENTRALE STELLE FÜR ECHTE DATEN – bitte ausfüllen / prüfen.
+//  Zentrale Stelle für Kontakt- und Buchungsdaten.
 //  Diese Werte tauchen auf der Kontaktseite, im Footer und in den
-//  Meta-Tags auf. Solange hier Platzhalter stehen, zeigt die Seite
-//  ehrliche „noch nicht hinterlegt"-Fallbacks statt erfundener Daten.
+//  Meta-Tags auf. Leere Felder werden automatisch ausgeblendet.
 // ─────────────────────────────────────────────────────────────
 
 interface SiteConfig {
@@ -14,16 +13,13 @@ interface SiteConfig {
 
 export const site: SiteConfig = {
   name: "Scalera",
-  url: "https://scalera-hq.com", // TODO: finale Domain prüfen
+  url: "https://scalera-hq.com",
 
   contact: {
-    // TODO: echte Telefonnummer eintragen (leer lassen = wird ausgeblendet)
-    phone: "",
+    phone: "", // bewusst leer – keine Telefonnummer online
     email: "laura.kufner@scalera-hq.com",
-    // TODO: echten LinkedIn-Link eintragen (leer lassen = wird ausgeblendet)
-    linkedin: "",
-    // TODO: Standort eintragen (z. B. "München, Deutschland")
-    location: "Deutschland",
+    linkedin: "https://www.linkedin.com/company/scalerahq/",
+    location: "Stuttgart",
   },
 
   // Calendly-Buchungslink. Leer lassen = Kalender wird ausgeblendet, nur Formular bleibt.

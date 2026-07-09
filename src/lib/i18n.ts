@@ -42,37 +42,6 @@ const translations = {
         { title: "Betreuung nach dem Go-Live", description: "Wir bleiben dran, bis es zuverlässig läuft." },
       ],
     },
-    // NEU: „So sieht das in der Praxis aus" – der Beweis-Block
-    proof: {
-      label: "So sieht das in der Praxis aus",
-      title: "Keine Icons. Echte Systeme.",
-      subtitle:
-        "Statt über uns zu reden, zeigen wir, was wir bauen: strukturierte Daten, automatisierte Abläufe und Oberflächen, die Ihr Team wirklich nutzt.",
-      items: [
-        {
-          image: "/dashboard-presentation.webp",
-          tag: "CRM-Dashboard",
-          title: "Vertrieb auf einen Blick",
-          description:
-            "Leads, Angebote und Follow-Ups an einem Ort – automatisch qualifiziert und priorisiert, statt in Excel und Postfach verstreut.",
-        },
-        {
-          image: "/data-screens.webp",
-          tag: "Automatisierungs-Workflow",
-          title: "Prozesse, die von selbst laufen",
-          description:
-            "Ein Ablauf statt zehn Handgriffe: Bewerbung rein → automatisch qualifiziert → Termin gebucht. Ausgelöst durch ein Ereignis, erledigt im Hintergrund.",
-        },
-        {
-          image: "/laptop-analytics.webp",
-          tag: "Reporting",
-          title: "Zahlen, die Entscheidungen tragen",
-          description:
-            "Automatisierte Reports und Dashboards mit den Kennzahlen, die zählen – aktuell, verlässlich, ohne manuelles Zusammenkopieren.",
-        },
-      ],
-      note: "Screenshots aus Eigenentwicklungen & Demo-Systemen.",
-    },
     services: {
       label: "Was wir bieten",
       title: "Leistungen, die Ihr Unternehmen voranbringen.",
@@ -279,36 +248,6 @@ const translations = {
         { title: "Systems that run day to day", description: "Built for real operations, not just the demo." },
         { title: "Support after go-live", description: "We stay on it until it runs reliably." },
       ],
-    },
-    proof: {
-      label: "What this looks like in practice",
-      title: "No icons. Real systems.",
-      subtitle:
-        "Instead of talking about ourselves, we show what we build: structured data, automated workflows and interfaces your team actually uses.",
-      items: [
-        {
-          image: "/dashboard-presentation.webp",
-          tag: "CRM dashboard",
-          title: "Sales at a glance",
-          description:
-            "Leads, quotes and follow-ups in one place – automatically qualified and prioritized instead of scattered across spreadsheets and inboxes.",
-        },
-        {
-          image: "/data-screens.webp",
-          tag: "Automation workflow",
-          title: "Processes that run themselves",
-          description:
-            "One flow instead of ten manual steps: application in → automatically qualified → meeting booked. Triggered by an event, handled in the background.",
-        },
-        {
-          image: "/laptop-analytics.webp",
-          tag: "Reporting",
-          title: "Numbers you can decide on",
-          description:
-            "Automated reports and dashboards with the metrics that matter – current, reliable, no manual copy-pasting.",
-        },
-      ],
-      note: "Screenshots from in-house developments & demo systems.",
     },
     services: {
       label: "What We Offer",
