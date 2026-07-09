@@ -59,6 +59,22 @@ function LeistungenContent() {
                       <p className="mt-4 text-lg leading-relaxed text-gray-400">
                         {service.description}
                       </p>
+                      <ul className="mt-6 flex flex-wrap gap-2">
+                        {service.bullets.map((bullet) => (
+                          <li
+                            key={bullet}
+                            className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-sm text-gray-300"
+                          >
+                            {bullet}
+                          </li>
+                        ))}
+                      </ul>
+                      <p className="mt-6 flex items-start gap-2 text-base font-semibold text-accent-300">
+                        <svg className="mt-1 h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                        </svg>
+                        {service.result}
+                      </p>
                     </div>
                   </div>
                 );

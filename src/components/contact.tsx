@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { useLocale } from "@/lib/locale-context";
+import { site } from "@/lib/site";
 
 export function Contact() {
   const { t } = useLocale();
@@ -48,6 +49,50 @@ export function Contact() {
             <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-relaxed text-gray-400">
               {t.contact.text}
             </p>
+
+            {/* Reassurance – nimmt die letzte Hürde */}
+            <div className="mt-6 inline-flex items-start gap-3 rounded-xl border border-accent-500/20 bg-accent-500/5 px-4 py-3">
+              <svg className="mt-0.5 h-5 w-5 shrink-0 text-accent-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span className="text-sm font-medium text-accent-200">{t.contact.reassurance}</span>
+            </div>
+
+            {/* Direkte Kontaktwege */}
+            <div className="mt-8">
+              <h3 className="text-sm font-semibold uppercase tracking-[0.15em] text-gray-400">
+                {t.contact.directTitle}
+              </h3>
+              <ul className="mt-4 space-y-3 text-[15px] text-gray-300">
+                {site.contact.email && (
+                  <li>
+                    <a href={`mailto:${site.contact.email}`} className="inline-flex items-center gap-3 transition-colors hover:text-white">
+                      <span className="text-accent-400">✉</span> {site.contact.email}
+                    </a>
+                  </li>
+                )}
+                {site.contact.phone && (
+                  <li>
+                    <a href={`tel:${site.contact.phone.replace(/\s/g, "")}`} className="inline-flex items-center gap-3 transition-colors hover:text-white">
+                      <span className="text-accent-400">☎</span> {site.contact.phone}
+                    </a>
+                  </li>
+                )}
+                {site.contact.linkedin && (
+                  <li>
+                    <a href={site.contact.linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 transition-colors hover:text-white">
+                      <span className="text-accent-400">in</span> LinkedIn
+                    </a>
+                  </li>
+                )}
+                {site.contact.location && (
+                  <li className="inline-flex items-center gap-3">
+                    <span className="text-accent-400">◎</span> {site.contact.location}
+                  </li>
+                )}
+              </ul>
+            </div>
+
           </div>
 
           <div className="lg:col-span-3">

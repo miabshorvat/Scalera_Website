@@ -35,7 +35,7 @@ export function Hero() {
               <span className="relative inline-flex h-2 w-2 rounded-full bg-accent-400" />
             </span>
             <span className="text-xs sm:text-sm font-medium text-gray-300">
-              {t.intro.label}
+              {t.hero.badge}
             </span>
           </div>
 
@@ -63,7 +63,7 @@ export function Hero() {
               </svg>
             </Link>
             <Link
-              href="/leistungen"
+              href="/vorgehen"
               className="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-6 py-3.5 sm:px-8 sm:py-4 text-base font-semibold text-gray-200 backdrop-blur-sm transition-all hover:border-white/25 hover:bg-white/10 hover:text-white"
             >
               {t.hero.ctaSecondary}

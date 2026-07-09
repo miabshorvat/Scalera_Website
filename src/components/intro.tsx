@@ -21,20 +21,21 @@ export function Intro() {
               {t.intro.text}
             </p>
 
-            <div className="mt-8 sm:mt-10 grid grid-cols-3 gap-3 sm:gap-4">
-              {[
-                { stat: t.intro.stat1, label: t.intro.stat1Label },
-                { stat: t.intro.stat2, label: t.intro.stat2Label },
-                { stat: t.intro.stat3, label: t.intro.stat3Label },
-              ].map((item) => (
+            <div className="mt-8 sm:mt-10 space-y-3 sm:space-y-4">
+              {t.intro.capabilities.map((item) => (
                 <div
-                  key={item.label}
-                  className="glass glass-hover rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center transition-all duration-300"
+                  key={item.title}
+                  className="glass glass-hover flex items-start gap-4 rounded-xl sm:rounded-2xl p-4 sm:p-5 transition-all duration-300"
                 >
-                  <div className="text-2xl sm:text-3xl font-bold text-gradient-accent lg:text-4xl">
-                    {item.stat}
+                  <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-accent-500/20 bg-accent-500/10">
+                    <svg className="h-4 w-4 text-accent-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
                   </div>
-                  <div className="mt-1 sm:mt-2 text-[10px] sm:text-xs text-gray-400 lg:text-sm">{item.label}</div>
+                  <div>
+                    <div className="text-sm sm:text-base font-semibold text-white">{item.title}</div>
+                    <div className="mt-0.5 text-xs sm:text-sm text-gray-400">{item.description}</div>
+                  </div>
                 </div>
               ))}
             </div>
