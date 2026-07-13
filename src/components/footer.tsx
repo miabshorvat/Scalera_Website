@@ -17,8 +17,8 @@ export function Footer() {
               <Image
                 src="/logo-full.png"
                 alt="Scalera"
-                width={200}
-                height={50}
+                width={684}
+                height={182}
                 className="h-10 w-auto lg:h-12"
               />
             </Link>
