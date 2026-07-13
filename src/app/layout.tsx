@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -16,6 +16,11 @@ const SITE_URL = "https://scalera-hq.com"; // TODO: finale Domain prüfen
 const TITLE = "Scalera | Weniger Verwaltung. Mehr Wachstum.";
 const DESCRIPTION =
   "Scalera entwickelt Systeme, die Unternehmen dauerhaft Verwaltungsaufwand sparen. Von CRM über Automatisierung bis KI. Systeme, die im Alltag wirklich genutzt werden.";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
