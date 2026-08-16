@@ -111,7 +111,7 @@ const translations = {
       cardTitle: "Ein Prozess, komplett automatisiert",
       cardText:
         "Wir automatisieren einen zeitfressenden Prozess in Ihrem Betrieb, zum Beispiel Angebotserstellung, Rechnungsversand, Bewerbungseingang, WhatsApp-Anbindung (Coexistence), Kundenanfragen (WhatsApp/E-Mail) oder wiederkehrende Reports.",
-      bullets: ["Fertig in ca. 2 Wochen", "Festpreis ab 2.900 €", "Kein Risiko, kein Rundum-Umbau"],
+      bullets: ["Fertig in ca. 2 Wochen", "Festpreis ab 1.490 €", "Kein Risiko, kein Rundum-Umbau"],
       button: "Prozess besprechen",
     },
     // Kundenorientierter 5-Schritte-Ablauf
@@ -326,7 +326,7 @@ const translations = {
       cardTitle: "One process, fully automated",
       cardText:
         "We automate one time-consuming process in your business, for example quote creation, invoice dispatch, application intake, WhatsApp integration (Coexistence), customer inquiries (WhatsApp/email) or recurring reports.",
-      bullets: ["Ready in about 2 weeks", "Fixed price from €2,900", "No risk, no full rebuild"],
+      bullets: ["Ready in about 2 weeks", "Fixed price from €1,490", "No risk, no full rebuild"],
       button: "Discuss your process",
     },
     process: {
